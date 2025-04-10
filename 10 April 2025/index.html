@@ -1,106 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="10 April 2025/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-</head>
-<style>
-    h4,h5,p {
-        color:white;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculus Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .formula {
+      font-family: "Courier New", monospace;
+      background: #f8f9fa;
+      border-left: 4px solid #0d99fd;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 0 5px 5px 0;
     }
-</style>
-<body class="bg-dark">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+    .formula sup, .formula sub {
+      font-size: 0.8em;
+    }
+    .formula .frac {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .formula .frac > span {
+      display: block;
+    }
+    .formula .frac .top {
+      border-bottom: 1px solid;
+    }
+    .sidebar {
+      position: sticky;
+      top: 20px;
+    }
 
-      <div class="row">
-        <div class="col-4">
-          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link" href="#item-1">Introduction</a>
-              <nav class="nav nav-pills flex-column">
-                <a class="nav-link ms-3 my-1" href="#item-1-1">hat is Calculus?</a>
-                <a class="nav-link ms-3 my-1" href="#item-1-2">What is it for?</a>
-              </nav>
-              <a class="nav-link" href="#item-2">Limit</a>
-              <a class="nav-link" href="#item-3">Derivatives</a>
-              <nav class="nav nav-pills flex-column">
-                <a class="nav-link ms-3 my-1" href="#item-3-1">Derivative Definition</a>
-                <a class="nav-link ms-3 my-1" href="#item-3-2">Practical Applications</a>
-              </nav>
-            </nav>
-          </nav>
-        </div>
-      
-        <div class="col-8">
-          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-            <div id="Introduction">
-              <h4>Introduction</h4>
-              <p>alskdfjalksdjlaksdnva lkasdjl akwjo iawr ogijs ldkgajsdl gkasdj glkasdjglkasd jgoa jnlaskdgjlasdkjg lsdk jasldkg jsldkv jaslkdg jalwk glaksdn glaskd jglaj glkaweglkasdjvlaijg lawkej glakwn glasdkj glia wjeglka nsdlg kajwgloi ajsdlgkjas ldgkajsjl gdkjaowigj alwkgj lasdkg jlaiwe jglas sndglasdk gj</p>
-            </div>
-            <div id="What is Calculus?">
-              <h5>What is Calculus?</h5>
-              <p>alskdfjalksdjlaksdnva lkasdjl akwjo iawr ogijs ldkgajsdl gkasdj glkasdjglkasd jgoa jnlaskdgjlasdkjg lsdk jasldkg jsldkv jaslkdg jalwk glaksdn glaskd jglaj glkaweglkasdjvlaijg lawkej glakwn glasdkj glia wjeglka nsdlg kajwgloi ajsdlgkjas ldgkajsjl gdkjaowigj alwkgj lasdkg jlaiwe jglas sndglasdk gj</p>
-            </div>
-            <div id="What is it for?">
-              <h5>What is it for?</h5>
-              <p>alskdfjalksdjlaksdnva lkasdjl akwjo iawr ogijs ldkgajsdl gkasdj glkasdjglkasd jgoa jnlaskdgjlasdkjg lsdk jasldkg jsldkv jaslkdg jalwk glaksdn glaskd jglaj glkaweglkasdjvlaijg lawkej glakwn glasdkj glia wjeglka nsdlg kajwgloi ajsdlgkjas ldgkajsjl gdkjaowigj alwkgj lasdkg jlaiwe jglas sndglasdk gj</p>
-            </div>
-            <div id="Limit">
-              <h4>Limit</h4>
-              <p>alskdfjalksdjlaksdnva lkasdjl akwjo iawr ogijs ldkgajsdl gkasdj glkasdjglkasd jgoa jnlaskdgjlasdkjg lsdk jasldkg jsldkv jaslkdg jalwk glaksdn glaskd jglaj glkaweglkasdjvlaijg lawkej glakwn glasdkj glia wjeglka nsdlg kajwgloi ajsdlgkjas ldgkajsjl gdkjaowigj alwkgj lasdkg jlaiwe jglas sndglasdk gj</p>
-            </div>
-            <div id="Derivatives">
-              <h4>Derivatives</h4>
-              <p>alskdfjalksdjlaksdnva lkasdjl akwjo iawr ogijs ldkgajsdl gkasdj glkasdjglkasd jgoa jnlaskdgjlasdkjg lsdk jasldkg jsldkv jaslkdg jalwk glaksdn glaskd jglaj glkaweglkasdjvlaijg lawkej glakwn glasdkj glia wjeglka nsdlg kajwgloi ajsdlgkjas ldgkajsjl gdkjaowigj alwkgj lasdkg jlaiwe jglas sndglasdk gj</p>
-            </div>
-            <div id="Derivative Definition">
-              <h5>Derivative Definition</h5>
-              <p>alskdfjalksdjlaksdnva lkasdjl akwjo iawr ogijs ldkgajsdl gkasdj glkasdjglkasd jgoa jnlaskdgjlasdkjg lsdk jasldkg jsldkv jaslkdg jalwk glaksdn glaskd jglaj glkaweglkasdjvlaijg lawkej glakwn glasdkj glia wjeglka nsdlg kajwgloi ajsdlgkjas ldgkajsjl gdkjaowigj alwkgj lasdkg jlaiwe jglas sndglasdk gj</p>
-            </div>
-            <div id="Practical Applications">
-              <h5>Practical Applications</h5>
-              <p>alskdfjalksdjlaksdnva lkasdjl akwjo iawr ogijs ldkgajsdl gkasdj glkasdjglkasd jgoa jnlaskdgjlasdkjg lsdk jasldkg jsldkv jaslkdg jalwk glaksdn glaskd jglaj glkaweglkasdjvlaijg lawkej glakwn glasdkj glia wjeglka nsdlg kajwgloi ajsdlgkjas ldgkajsjl gdkjaowigj alwkgj lasdkg jlaiwe jglas sndglasdk gj</p>
-            </div>
-          </div>
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">Calculus Guide</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 ">
+        <div class="sidebar list-group">
+          <a href="#intro" class="list-group-item list-group-item-action" style="border-left: 4px solid black;">Introduction</a>
+          <a href="#derivatives" class="list-group-item list-group-item-action" style="border-left: 4px solid black;">Derivatives</a>
+          <a href="#limits" class="list-group-item list-group-item-action" style="border-left: 4px solid black;">Limits</a>
+          <a href="#applications" class="list-group-item list-group-item-action" style="border-left: 4px solid black;">Applications</a>
         </div>
       </div>
+
+      <!--Main Content-->
+      <div class="col-lg-9">
+
+        <!-- Introduction -->
+        <section id="intro" class="mb-5">
+          <h2 class="mb-4 border-bottom pb-2">Introduction to Calculus</h2>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5>What is Calculus?</h5>
+              <p>Calculus studies continuous change through two main operations:</p>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="formula">
+                    <strong>Differentiation</strong><br>
+                    <span>dy/dx = lim<sub>Δx→0</sub></span>
+                    <div class="frac">
+                      <span class="top">Δy</span>
+                      <span>Δx</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="formula">
+                    <strong>Integration</strong><br>
+                    <span>∫ f(x) dx</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Derivatives -->
+        <section id="derivatives" class="mb-5">
+          <h2 class="mb-4 border-bottom pb-2">Derivatives</h2>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5>Definition</h5>
+              <p>The derivative measures how a function changes as its input changes:</p>
+              <div class="formula">
+                f'(x) = lim<sub>h→0</sub>
+                <div class="frac">
+                  <span class="top">f(x+h) − f(x)</span>
+                  <span>h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5>Common Derivatives</h5>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Function</th>
+                    <th>Derivative</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>x<sup>n</sup></td>
+                    <td>n·x<sup>n−1</sup></td>
+                  </tr>
+                  <tr>
+                    <td>sin(x)</td>
+                    <td>cos(x)</td>
+                  </tr>
+                  <tr>
+                    <td>e<sup>x</sup></td>
+                    <td>e<sup>x</sup></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Limits -->
+        <section id="limits" class="mb-5">
+          <h2 class="mb-4 border-bottom pb-2">Limits</h2>
+          <div class="card">
+            <div class="card-body">
+              <p>A limit describes the value a function approaches as the input approaches some point:</p>
+              <div class="formula">
+                lim<sub>x→c</sub> f(x) = L
+              </div>
+              <div class="alert alert-info mt-3">
+                <strong>Example</strong>: lim<sub>x→0</sub> (sin x)/x = 1
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Applications -->
+        <section id="applications">
+          <h2 class="mb-4 border-bottom pb-2">Applications</h2>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5>Physics</h5>
+                  <p>Velocity and acceleration:</p>
+                  <div class="formula">
+                    v(t) = <span class="frac">
+                      <span class="top">dx</span>
+                      <span>dt</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5>Economics</h5>
+                  <p>Marginal cost:</p>
+                  <div class="formula">
+                    MC = <span class="frac">
+                      <span class="top">dC</span>
+                      <span>dq</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
